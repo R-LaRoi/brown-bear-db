@@ -1,0 +1,60 @@
+body{
+
+  background-color: #f8f8f8e3;
+}
+
+section{
+  /* margin: 5px; */
+  /* padding: 30px; */
+}
+
+.container {
+ height: 100vh;
+ display: grid;
+ grid-template-columns: 1.3fr .8fr;
+ grid-template-rows: .2fr 2fr 2fr;
+ grid-template-areas:
+'time time'
+'lgcard card1'
+'lgcard card2';
+font-family: 'Yomogi', cursive;
+position: fixed;
+width: 98vw;
+border-radius: 10px;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+background-color: rgba(222, 184, 135, 0.413);
+
+}
+
+
+.time {
+  background-color: rgb(255, 94, 0);
+  grid-area: time;
+
+}
+
+.lgcard {
+font-size: 2rem;
+  grid-area: lgcard;
+  /* border: 25px solid orange; */
+
+}
+
+.card1 {
+  grid-area: card1;
+
+}
+
+.card2 {
+  grid-area: card2;
+}
+
+.sq{padding: 10px;
+border-radius: 25px;
+  background-color: rgba(255, 153, 0, 0.773);
+  
+  margin: 10px;
+
+
+
+}

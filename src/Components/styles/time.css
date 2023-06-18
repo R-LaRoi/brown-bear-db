@@ -1,0 +1,19 @@
+.info-bar{
+display: flex;
+justify-content: space-between;
+}
+
+.temperature{
+padding: 10px;
+display: flex;
+flex-direction: column;
+border-radius: 10px;
+  text-align: center;
+border:3px solid rgba(255, 108, 3, 0.715);
+}
+
+.clock{
+
+  font-size: 4rem;
+  color: rgba(255, 108, 3, 0.715);
+}
