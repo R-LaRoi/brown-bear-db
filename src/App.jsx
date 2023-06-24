@@ -4,6 +4,7 @@ import Bubbles from './Components/Bubbles'
 import Today from './Components/TodayILearned'
 import TimeWeather from './Components/TimeWeather'
 import './App.css'
+import Dictionary from './Components/DictionaryApi'
 
 function App() {
 
@@ -11,11 +12,18 @@ function App() {
 <section>
 <div className='container' >
 <div className='time sq'> <TimeWeather /></div>
-<div className='lgcard sq'> <WordOfDay/></div>
+<div className='lgcard sq'> <WordOfDay/>
+<div className='sq inner-card'>
+  <div className="card3"><Dictionary/></div>
+
+<div className='card2'><Today/></div>
+
+
+</div>
+</div>
 <div className='card1 sq'>
  <Bubbles /></div>
- <div className='card2 sq'>
- <Today /></div>
+
 </div>
 
 </section>

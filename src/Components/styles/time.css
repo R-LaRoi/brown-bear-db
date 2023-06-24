@@ -1,6 +1,10 @@
 .info-bar{
 display: flex;
-justify-content: space-between;
+flex-direction: column;
+line-height: 1;
+color: #d99203;
+font-weight: 800;
+/* justify-content: space-between; */
 }
 
 .temperature{
@@ -8,12 +12,59 @@ padding: 10px;
 display: flex;
 flex-direction: column;
 border-radius: 10px;
-  text-align: center;
-border:3px solid rgba(255, 108, 3, 0.715);
+  /* text-align: center; */
+  font-size: 1.5rem;
+/* border:3px solid #432534; */
+
 }
 
 .clock{
 
-  font-size: 4rem;
-  color: rgba(255, 108, 3, 0.715);
+  font-size: 7rem;
+font-weight: 800;
+}
+
+.date{
+  font-size: 4.5rem;
+}
+
+.bubbles{
+color: rgb(220, 139, 17);
+background-color: #1f514a7e;
+height: 250px;
+width: 300px;
+border-radius: 20px;
+padding: 20px;
+margin-top: 10px;
+z-index: 1;
+font-size: 1.5rem;
+line-height: 1.2;
+letter-spacing: -1px;
+
+}
+
+
+ button{
+border-radius: 10px;
+border: none;
+padding: 10px;
+background-color: #d49311f8;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+font-size: 1.2rem;
+color: #0f2a26f8;
+margin-top: 20px;
+} 
+
+
+.fa-wand-sparkles{
+  padding: 8px;
+  background: none;
+  font-size: 2rem;
+color:#d49311f8
+
+
+}
+
+.idea{
+  color: rgb(223, 178, 71);
 }

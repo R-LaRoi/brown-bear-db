@@ -1,60 +1,73 @@
 body{
-
-  background-color: #f8f8f8e3;
+background-color: #0A2e36;
+margin: 20px;
 }
 
-section{
-  /* margin: 5px; */
-  /* padding: 30px; */
-}
+
 
 .container {
- height: 100vh;
+ height: 95vh;
  display: grid;
- grid-template-columns: 1.3fr .8fr;
- grid-template-rows: .2fr 2fr 2fr;
+ grid-template-columns: .5fr 1fr ;
+ grid-template-rows: 1fr .5fr 1fr;
  grid-template-areas:
-'time time'
-'lgcard card1'
-'lgcard card2';
+'time lgcard'
+'time lgcard'
+'card1 lgcard';
 font-family: 'Yomogi', cursive;
-position: fixed;
-width: 98vw;
+position: relative;
+width: 100%;
+box-shadow: rgba(165, 165, 165, 0.784) 0px 1px 2px 0px, rgba(13, 13, 13, 0.723) 0px 2px 6px 2px;
+padding: 20px;
 border-radius: 10px;
-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-background-color: rgba(222, 184, 135, 0.413);
+
 
 }
 
 
 .time {
-  background-color: rgb(255, 94, 0);
+
   grid-area: time;
 
 }
 
 .lgcard {
-font-size: 2rem;
-  grid-area: lgcard;
-  /* border: 25px solid orange; */
 
+font-size: 2rem;
+
+  grid-area: lgcard;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.541) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+width: 100%;
+/* border: 1px solid sandybrown; */
 }
 
 .card1 {
   grid-area: card1;
+position: relative;
+bottom: 110px;
+ 
 
 }
 
-.card2 {
-  grid-area: card2;
-}
+
 
 .sq{padding: 10px;
-border-radius: 25px;
-  background-color: rgba(255, 153, 0, 0.773);
-  
-  margin: 10px;
+
+color: #dcdbdb;
+
+  margin: 5px;
 
 
 
+}
+
+
+.bear {
+  position: fixed;
+  display: flex;
+  left: -10%;
+  max-width: 700px;
+  top: 69%;
+  z-index: 2;
 }

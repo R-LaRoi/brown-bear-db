@@ -1,34 +1,69 @@
-.bear{
-position:fixed;
-display: flex;
-left: -10%;
-max-width: 700px;
-top: 60%;
-}
+
 
 .col-1{
-
+border-radius: 5px;
+padding-top: 30px;
+/* background-color: rgba(240, 248, 255, 0.107); */
 position: relative;
 left:40px;
-max-width: 580px;
+max-width: 680px;
+/* margin-top: 60px; */
 }
 
 
-.card-2{
 
-}
-.col-2{
-
-
-
-}
 .word{
 letter-spacing: -2px;
 font-size: 3.5rem;
+
 }
 
 
-.word-def{
+.inner-card {
 
-  /* max-width: 600px; */
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+position: relative;
+top:80px
+}
+.word-def{
+font-size: 1.5rem;
+  max-width: 800px;
+}
+
+.card2, .card3{
+  padding: 20px;
+  position: relative;
+  height: 275px;
+  width: 370px;
+  border-radius: 15px;
+  background-color: rgba(83, 82, 82, 0.349);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  font-size: 1rem;
+}
+
+.title{
+  color: #d49311f8;
+}
+
+.fa-book-open-reader,
+.fa-magnifying-glass{
+  color: #d49311f8;
+  font-size: 2rem;
+
+  padding: 5px;
+  border-radius: 50%;
+
+float: right;
+  
+}
+
+input{
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #d49311f8;
+padding: 8px;
+margin-right: 10px;
+color: whitesmoke;
 }

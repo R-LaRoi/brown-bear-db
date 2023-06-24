@@ -43,7 +43,7 @@ console.log(data)
 <div className='card-2'>
 
  <div className='col-1'>
-    <div>word of the day</div>
+   <div className='title'>word of the day</div> 
   <div className='word'>{word}</div>
   <div className='word-def'>definition: {definition}</div>
 

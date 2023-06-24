@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import horse from "./assets/horse.png"
+import cat from "./assets/cat.png"
 
 export default function Today() {
 let [title, setTitle] = useState()
@@ -27,6 +27,7 @@ console.log(booksArray)
 
   return (
     <div>
+      <i className="fa-solid fa-book-open-reader"></i>
       <div>My Reading List</div>
 <ul>
 {booksArray.map((books)=>{
@@ -45,7 +46,7 @@ console.log(booksArray)
 </form>
 
 
-<img src={horse} width="200px" />
+<img src={cat} width="200px" />
     </div>
   )
 }

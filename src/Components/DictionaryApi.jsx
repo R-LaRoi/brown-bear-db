@@ -1,10 +1,12 @@
 import React, { useState  } from "react"
+import horse from './assets/horse.png'
 
 
 export default function Dictionary(){
     
   const [keyword, setKeyword] = useState("universe");
   const [info, setInfo] = useState('');
+  const [showDictionary, setShowDictionary]= useState(false)
 
   
   function defineWord(data) {
@@ -30,9 +32,22 @@ export default function Dictionary(){
 
   }
 
+  function clickIcon(){
+    setShowDictionary(!showDictionary)
+    console.log('clicked')
+setInfo('')
+
+
+
+  }
+
 
 if(info) { return(
-  <section >
+
+  <section>
+     <div><i className="fa-solid fa-magnifying-glass" onClick={clickIcon}></i></div>
+       <div>DICTIONARY</div> 
+
       <form onSubmit={getWord} id='dictionary'>
       <input
         className="input"
@@ -51,19 +66,29 @@ if(info) { return(
 )} else {
 
 return(
+
+
   <section className="definition-card" id='dictionary'>
-      <form onSubmit={getWord}>
-        <div>What word are you looking for?</div>
+   
+
+ <> 
+       <i className="fa-solid fa-magnifying-glass" onClick={clickIcon}></i><div>DICTIONARY</div>
+  
+  <form onSubmit={getWord}>
+        <div>What word are you looking for?
+           
+        </div>
       <input
         className="input"
         type=""
         placeholder="find word"
         onChange={searchWord}>
       </input>
-
-      </form>
-
+      </form> 
+</>
+  <img src={horse} alt="" width="250px" />
 </section>
+
 )
 
 }

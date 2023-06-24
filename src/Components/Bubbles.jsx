@@ -15,12 +15,17 @@ setIdea(data.activity)
 
 
   return (
- <div>
-Do something new!
-    <div>
-      {idea}  </div>
-<button onClick={getIdea}>New Ideas</button>
-<img src={cat} alt="" width="200px" />
+ <div className='bubbles'>
+
+  <div>
+<i className="fa-solid fa-wand-sparkles"></i>
+    </div>
+    <div className='idea'>
+      {idea}</div>
+    <button onClick={getIdea}>      Do something new!
+
+    </button>
+
 </div>
   
   )

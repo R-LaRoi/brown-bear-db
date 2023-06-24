@@ -45,8 +45,9 @@ return (
       <div className="temperature">
         Weather:
         <div><img src={icon} width="25px" /></div>
-        <div>{temperature}°C
-          <div>{description}</div>{location} </div> </div>
+        <div>{temperature}24°C
+          <div>{description}Sunny</div>{location} Maputo
+          </div> </div>
 
     </div>
 
