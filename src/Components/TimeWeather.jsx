@@ -9,11 +9,10 @@ let time = new Date()
 let hours = time.getHours()
 let minutes = time.getMinutes()
 
-if(minutes< 10){
-  return "0"+ minutes
-}
+
 
 function currentTime(){
+
 let days = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
 days.map((day, index) =>{
   if( index === time.getDay()){
@@ -32,9 +31,13 @@ return (
         <div className='info-bar'>
 
     
-               <div className='clock'>{hours}:{minutes}
-
-               
+               <div className='clock'>
+                {{minutes} < 10 ? 
+        `${hours}:0${minutes}`: 
+     
+        `${hours}:${minutes}`
+                }
+      
               </div>
         <div className='date'> 
  <span className=''> {weekday}</span>
