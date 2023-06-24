@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "The Purple Cat",
+    "version": "1.0.0",
+    "description": "Reading Dashboard for Kids",
+    "action": {
+        "default_icon": "icon.png"
+    },
+    "chrome_url_overrides": {
+        "newtab": "dist"
+    }
+}
